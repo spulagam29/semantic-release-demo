@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Install dependencies
         run: npm ci
@@ -24,4 +24,4 @@ jobs:
       - name: Run semantic-release
         run: npm run release
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
