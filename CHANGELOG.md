@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/spulagam29/semantic-release-demo/compare/v1.0.0...v1.1.0) (2026-02-05)
+
+
+### Features
+
+* update 2 ([91042d9](https://github.com/spulagam29/semantic-release-demo/commit/91042d98819bdf549f3428c18f1ba932ce695664))
+
 # 1.0.0 (2026-02-05)
 
 
