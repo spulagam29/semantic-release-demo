@@ -8,11 +8,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = trim($_POST['message'] ?? '');
 
     if ($name === '') {
-        $errors[] = 'Name is required!.';
+        $errors[] = 'Name is required.';
     }
 
     if ($email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors[] = 'Valid email is required!.';
+        $errors[] = 'Valid email is required.';
     }
 
     if ($message === '') {
