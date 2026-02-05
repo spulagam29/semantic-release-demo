@@ -8,10 +8,14 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GH_PAT }}  # semantic-release uses this
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -23,5 +27,3 @@ jobs:
 
       - name: Run semantic-release
         run: npm run release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
