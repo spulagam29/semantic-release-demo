@@ -9,13 +9,13 @@ jobs:
   release:
     runs-on: ubuntu-latest
     env:
-      GITHUB_TOKEN: ${{ secrets.GH_PAT }}  # Must match your secret
+      GH_TOKEN: ${{ secrets.GH_PAT }}  # semantic-release uses this
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Important for semantic-release
+          fetch-depth: 0  # full history
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
