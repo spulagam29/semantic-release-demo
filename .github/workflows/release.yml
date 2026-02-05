@@ -24,4 +24,4 @@ jobs:
       - name: Run semantic-release
         run: npm run release
         env:
-          GITHUB_TOKEN: ${{ secrets.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 }}
+          GITHUB_TOKEN: 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
