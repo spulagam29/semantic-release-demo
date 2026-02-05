@@ -34,7 +34,7 @@ $result = $conn->query('SELECT id, Name, Type, Origin, Strength, Price, ImageURL
         }
 
         nav {
-            margin-top: 51px;
+            margin-top: 50px;
             background: #cdffcd;
             display: flex;
             justify-content: space-between;
