@@ -27,7 +27,7 @@ $result = $conn->query('SELECT id, Name, Type, Origin, Strength, Price, ImageURL
         .startLine {
             background: black;
             color: white;
-            font-size: 20px;
+            font-size: 21px;
             position: fixed;
             width: 100%;
             text-align: center;
